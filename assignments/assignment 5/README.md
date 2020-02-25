@@ -131,3 +131,24 @@ correct course are returned.
 ## Grading 
 
 We will run `pytest` in the directory with your tests. Please make sure that you remove both the example tests from 'PythonTutorial/Classes/example_test.py' and just 'example_test.py'. We will be looking for 5 total tests that pass and 10 total tests that fail. We will then review the code for each test to assure you created the tests correctly. You will be marked off for each test that does not work.
+
+
+### 11. add_student_2 - Professor.py
+
+The professor should not be able to add student to courses that the professor do not teach
+
+### 12. nonExistingStudent - Professor.py
+
+The professor should not be able to drop student that does not exist in the class
+
+### 13. check_grades_2 - Student.py
+
+The student should not be able to check the grades from courses that the student is not in
+
+### 14. wrongPassword - System.py
+
+The system should not allow user to log in if the password entered is incorrect
+
+### 15. create_assignment_2 - Staff.py
+
+The staff should not be able to create assignments from courses they do not teach

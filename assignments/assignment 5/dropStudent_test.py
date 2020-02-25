@@ -10,7 +10,13 @@ def test_dropStudent(grading_system):
     dropStudent = 'yted91'
     grading_system.login(username, password)
     grading_system.usr.drop_student(dropStudent, course)
-    assert json_users()[dropStudent]['courses'][course] is None
+    courses = json_users()[dropStudent]['courses']
+    isPresent = False
+    for element in courses:
+        if element == course:
+            isPresent = True
+
+    assert isPresent == False
 
 @pytest.fixture
 def grading_system():

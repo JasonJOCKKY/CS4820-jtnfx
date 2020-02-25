@@ -14,6 +14,7 @@ def test_submitAssignment(grading_system):
     grading_system.usr.submit_assignment(course,assignment,submission,submission_date)
     assert json_users()[username]['courses'][course][assignment]['submission'] == submission
     assert json_users()[username]['courses'][course][assignment]['submission_date'] == submission_date
+    assert json_users()[username]['courses'][course][assignment]['ontime'] == False
 
 @pytest.fixture
 def grading_system():

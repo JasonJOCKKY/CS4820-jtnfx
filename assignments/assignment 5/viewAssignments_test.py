@@ -6,7 +6,7 @@ import json
 def test_viewAssignment(grading_system):
     username = 'akend3'
     password = '123454321'
-    course = 'comp_sci'
+    course = 'cloud_computing'
     grading_system.login(username, password)
     
     # assignments obtained from the function
